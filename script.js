@@ -3,7 +3,7 @@ const state = {
   currentScene: 0
 };
 
-const W = 900, H = 420;
+const W = 900, H = 360;
 const M = { top: 30, right: 30, bottom: 50, left: 60 };
 const IW = W - M.left - M.right;
 const IH = H - M.top - M.bottom;
