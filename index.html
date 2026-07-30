@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gapminder Narrative</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Beyond GDP</h1>
+    <p>What income can and cannot tell you about a country's health</p>
+  </header>
+
+  <main>
+    <div id="scene-text">
+      <h2 id="scene-title"></h2>
+      <p id="scene-body"></p>
+    </div>
+
+    <svg id="chart" viewBox="0 0 900 560"></svg>
+    <div id="country-picker">
+    <label><input type="checkbox" value="Vietnam" class="country-check"> Vietnam</label>
+    <label><input type="checkbox" value="South Africa" class="country-check"> South Africa</label>
+    <label><input type="checkbox" value="China" class="country-check"> China</label>
+    <label><input type="checkbox" value="United States" class="country-check"> United States</label>
+    <label><input type="checkbox" value="India" class="country-check"> India</label>
+    <label><input type="checkbox" value="Nigeria" class="country-check"> Nigeria</label>
+    <label><input type="checkbox" value="Brazil" class="country-check"> Brazil</label>
+    <label><input type="checkbox" value="Japan" class="country-check"> Japan</label>
+    </div>
+    <div id="nav-bar">
+    <button id="btn-back">Back</button>
+    <button id="btn-next">Next</button>
+    </div>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

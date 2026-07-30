@@ -1,0 +1,110 @@
+/* ---------- Base ---------- */
+body {
+  margin: 0;
+  background: #FBF6EC;      
+  color: #1F2A24;             
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+header {
+  padding: 1rem 1.5rem 0.6rem;
+  border-bottom: 2px solid #1F2A24;
+}
+
+header h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.2rem;
+  margin: 0 0 0.3rem;
+}
+
+header p {
+  color: #5A6B60;
+  margin: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 4rem;
+}
+
+
+/* ---------- Scene text ---------- */
+#scene-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+#scene-body {
+  color: #3D4C43;
+  line-height: 1.5;
+  max-width: 65ch;
+}
+
+/* ---------- Chart ---------- */
+svg#chart {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  border: 1px solid #C9BFA5;
+  border-radius: 4px;
+  margin: 0.6rem 0;
+}
+
+/* ---------- Country picker (Scene 4 checkboxes) ---------- */
+#country-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+
+#country-picker label {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#nav-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #FBF6EC;
+  padding: 0.8rem 0;
+  border-top: 1px solid #C9BFA5;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+
+/* ---------- Buttons ---------- */
+button {
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid #1F2A24;
+  border-radius: 20px;
+  background: #FBF6EC;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  background: #1F2A24;
+  color: #FBF6EC;
+}
+
+button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background: #FBF6EC;
+  color: inherit;
+}
+
